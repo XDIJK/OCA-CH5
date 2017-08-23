@@ -3,14 +3,6 @@ package character;
 import character.typeinterfaces.*;
 
 public class Crusader extends CharacterBase implements MeleeInterface, HolyInterface {
-  protected int health;
-  protected int stamina;
-
-  protected int level;
-  protected int exp;
-  protected int expToLevel;
-
-  final protected String name;
 
   public Crusader(String name) {
     level = 0;

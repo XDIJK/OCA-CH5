@@ -3,14 +3,6 @@ package character;
 import character.typeinterfaces.*;
 
 public class DragonKnight extends CharacterBase implements MeleeInterface, MagicInterface {
-  protected int health;
-  protected int stamina;
-
-  protected int level;
-  protected int exp;
-  protected int expToLevel;
-
-  final protected String name;
 
   public DragonKnight(String name) {
     level = 0;

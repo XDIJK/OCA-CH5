@@ -3,15 +3,7 @@ package character;
 import character.typeinterfaces.*;
 
 public class Necromancer extends CharacterBase implements MagicInterface, UnholyInterface {
-  protected int health;
-  protected int stamina;
-
-  protected int level;
-  protected int exp;
-  protected int expToLevel;
-
-  final protected String name;
-
+  
   public Necromancer(String name) {
     level = 0;
     exp = 0;
@@ -46,8 +38,6 @@ public class Necromancer extends CharacterBase implements MagicInterface, Unholy
   public String getName() {
     return name;
   }
-
-
 
   //MOVES
   public void attack() {
