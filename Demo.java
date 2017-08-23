@@ -15,8 +15,8 @@ public class Demo {
     Crusader velstadt = new Crusader("Velstadt");
     Necromancer elana = new Necromancer("Elana");
     DragonKnight jan = new DragonKnight("Jan");
-
-    charList.addAll(Arrays.asList(velstadt, elana, jan));
+    
+    charList.addAll(Arrays.asList(new Crusader("Velstadt"), new Necromancer("Elana"), new DragonKnight("Jan")));
   }
 
   private void executeAllMethods() {
@@ -24,6 +24,5 @@ public class Demo {
       System.out.println(BREAK);
       test.showEmWhatYouGot();
     }
-  }
-  
+  } 
 }
