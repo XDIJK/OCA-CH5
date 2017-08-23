@@ -3,7 +3,7 @@ package character;
 import character.typeinterfaces.*;
 
 public class Necromancer extends CharacterBase implements MagicInterface, UnholyInterface {
-  
+
   public Necromancer(String name) {
     level = 0;
     exp = 0;
@@ -60,7 +60,7 @@ public class Necromancer extends CharacterBase implements MagicInterface, Unholy
     System.out.println(name + " is summoning skeletons");
   }
 
-  public void showEmWhatYouGot() {
+  public void executeAllMoves() {
     attack();
     magicAttack();
     hover();

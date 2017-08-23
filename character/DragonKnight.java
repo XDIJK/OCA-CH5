@@ -64,7 +64,7 @@ public class DragonKnight extends CharacterBase implements MeleeInterface, Magic
     System.out.println(name + " starts muttering a curse");
   }
 
-  public void showEmWhatYouGot() {
+  public void executeAllMoves() {
     attack();
     meleeAttack();
     block();

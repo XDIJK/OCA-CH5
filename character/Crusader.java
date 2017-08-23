@@ -62,7 +62,7 @@ public class Crusader extends CharacterBase implements MeleeInterface, HolyInter
     stamina += 10;
   }
 
-  public void showEmWhatYouGot() {
+  public void executeAllMoves() {
     attack();
     meleeAttack();
     block();

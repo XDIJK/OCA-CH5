@@ -15,14 +15,14 @@ public class Demo {
     Crusader velstadt = new Crusader("Velstadt");
     Necromancer elana = new Necromancer("Elana");
     DragonKnight jan = new DragonKnight("Jan");
-    
+
     charList.addAll(Arrays.asList(new Crusader("Velstadt"), new Necromancer("Elana"), new DragonKnight("Jan")));
   }
 
   private void executeAllMethods() {
-    for (CharacterBase test : this.charList ) {
+    for (CharacterBase character : this.charList ) {
       System.out.println(BREAK);
-      test.showEmWhatYouGot();
+      character.executeAllMoves();
     }
-  } 
+  }
 }

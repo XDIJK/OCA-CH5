@@ -24,6 +24,6 @@ public abstract class CharacterBase {
 
   public abstract void attack();
 
-  public abstract void showEmWhatYouGot();
+  public abstract void executeAllMoves();
 
 }
