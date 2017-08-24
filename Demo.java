@@ -1,28 +1,31 @@
-import character.*;
-import java.util.*;
+import character.CharacterBase;
+import character.Crusader;
+import character.Necromancer;
+import character.DragonSlayer;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 
 public class Demo {
   final static String BREAK = "\n";
-  List<CharacterBase> charList = new ArrayList<CharacterBase>();
+  private List<CharacterBase> charList = new ArrayList<CharacterBase>();
 
   public static void main(String[] args) {
     Demo dm = new Demo();
-    dm.executeAllMethods();
+    dm.executeCharacterMoveSet();
 
   }
 
   public Demo() {
-    Crusader velstadt = new Crusader("Velstadt");
-    Necromancer elana = new Necromancer("Elana");
-    DragonKnight jan = new DragonKnight("Jan");
-
-    charList.addAll(Arrays.asList(new Crusader("Velstadt"), new Necromancer("Elana"), new DragonKnight("Jan")));
+    charList.addAll(Arrays.asList(new Crusader("Gwyn"), new Necromancer("Nito"), new DragonSlayer("Ornstein")));
   }
 
-  private void executeAllMethods() {
+  private void executeCharacterMoveSet() {
     for (CharacterBase character : this.charList ) {
       System.out.println(BREAK);
       character.executeAllMoves();
     }
   }
+
 }

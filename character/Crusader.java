@@ -1,6 +1,7 @@
 package character;
 
-import character.typeinterfaces.*;
+import character.typeinterfaces.MeleeInterface;
+import character.typeinterfaces.HolyInterface;
 
 public class Crusader extends CharacterBase implements MeleeInterface, HolyInterface {
 

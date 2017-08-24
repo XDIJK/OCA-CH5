@@ -1,6 +1,7 @@
 package character;
 
-import character.typeinterfaces.*;
+import character.typeinterfaces.MagicInterface;
+import character.typeinterfaces.UnholyInterface;
 
 public class Necromancer extends CharacterBase implements MagicInterface, UnholyInterface {
 

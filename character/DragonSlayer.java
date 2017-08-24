@@ -1,10 +1,11 @@
 package character;
 
-import character.typeinterfaces.*;
+import character.typeinterfaces.MeleeInterface;
+import character.typeinterfaces.MagicInterface;
 
-public class DragonKnight extends CharacterBase implements MeleeInterface, MagicInterface {
+public class DragonSlayer extends CharacterBase implements MeleeInterface, MagicInterface {
 
-  public DragonKnight(String name) {
+  public DragonSlayer(String name) {
     level = 0;
     exp = 0;
     expToLevel = 100;
